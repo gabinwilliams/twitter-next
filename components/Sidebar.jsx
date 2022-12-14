@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import SidebarMenuItem from './SidebarMenuItem'
 import {HomeIcon, BellIcon,InboxIcon, UserIcon, ClipboardIcon} from '@heroicons/react/solid'
 import {BookmarkIcon, HashtagIcon, DotsCircleHorizontalIcon} from '@heroicons/react/outline'
