@@ -10,7 +10,7 @@ export default function Feed() {
             userName: "gabinwilliams",
             userImg:
                 "https://images.unsplash.com/photo-1670525975578-4051a7803c38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8dG93SlpGc2twR2d8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-            img: "https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBvc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+            img: "https://images.unsplash.com/photo-1670188100630-650c52f61c2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
             text: "I have an idea!!",
             timestamp: "2 hours ago",
         },
