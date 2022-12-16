@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function News({ article }) {
     return (
         <a href={article.url} rel="noreferrer" target="_blank">
@@ -12,7 +13,7 @@ export default function News({ article }) {
                     className="rounded-xl"
                     width="70"
                     src={article.urlToImage}
-                    alt=""
+                    alt="article-photo"
                 />
             </div>
         </a>
