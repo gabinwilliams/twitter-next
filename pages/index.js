@@ -3,7 +3,7 @@ import Feed from "../components/Feed";
 import Sidebar from "../components/Sidebar";
 import Widgets from "../components/Widgets";
 
-export default function Home() {
+export default function Home({ newsResults, randomUsersResults }) {
     return (
         <div>
             <Head>
@@ -15,14 +15,28 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             {/* add css here to make sure screen is center if user zooms out */}
-            <main className="flex min-h-screen max-w-7xl mx-auto">
+            <main className="flex min-h-screen mx-auto">
                 {/* sidebar */}
                 <Sidebar />
                 {/* feed */}
                 <Feed />
                 {/* widets */}
-                <Widgets/>
+                <Widgets newsResults={newsResults.articles} randomUsersResults={randomUsersResults.results} />
             </main>
         </div>
     );
+}
+
+export async function getServerSideProps() {
+    const newsResults = await fetch(
+        "https://saurav.tech/NewsAPI/top-headlines/category/business/us.json"
+    ).then((res) => res.json());
+    const randomUsersResults = await fetch('https://randomuser.me/api/?results=30&inc=name,login,picture').then((res) => res.json());
+
+    return {
+        props: {
+            newsResults,
+            randomUsersResults
+        },
+    };
 }
