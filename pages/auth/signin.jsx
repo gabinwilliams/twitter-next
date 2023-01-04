@@ -16,7 +16,7 @@ export default function signin({ providers }) {
                     >
                         <img
                             className="w-36 object-cover"
-                            src="https://brandeps.com/logo-download/T/Twitter-logo-vector-01.svg"
+                            src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"
                             alt="twitter logo"
                         />
                         <p className="text-center text-sm italic my-10">
